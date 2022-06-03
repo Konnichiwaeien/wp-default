@@ -1,0 +1,61 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+body {
+  min-width: 320px;
+  background: @primary-bg;
+  color: @primary-clr;
+  .font(full);
+}
+
+.body--modalopen {
+  overflow: hidden;
+}
+
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  overflow: hidden;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
+}

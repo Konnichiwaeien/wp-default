@@ -1,0 +1,63 @@
+.font(full; @primary-fs: @primary-fs; @primary-lh: @primary-lh; @primary-ff: @primary-ff; @primary-fw: @primary-fw) {
+  font-size: @primary-fs;
+  line-height: @primary-lh;
+  font-family: @primary-ff;
+  font-weight: @primary-fw;
+}
+
+.font(short; @primary-fs: @primary-fs; @primary-lh: @primary-lh; @primary-fw: @primary-fw) {
+  font-size: @primary-fs;
+  line-height: @primary-lh;
+  font-weight: @primary-fw;
+}
+
+.font(shortest; @primary-fs: @primary-fs; @primary-lh: @primary-lh) {
+  font-size: @primary-fs;
+  line-height: @primary-lh;
+}
+
+
+
+.def-ib(@align: top) {
+  display: inline-block;
+  vertical-align: @align;
+}
+
+.def-list() {
+  font-size: 0;
+  li{
+    .def-ib();
+    font-size: @primary-fs;
+  }
+}
+
+.def-pseudo(@content: ""; @position: absolute; @display: block) {
+  content: @content;
+  position: @position;
+  display: @display;
+}
+
+
+
+.align(all; @top: 50%; @left: 50%; @translate: translate(-50%, -50%)) {
+  top: @top;
+  left: @left;
+  transform: @translate;
+}
+
+.align(horizont; @left: 50%; @translateX: translateX(-50%)) {
+  left: @left;
+  transform: @translateX;
+}
+
+.align(vertical; @top: 50%; @translateY: translateY(-50%)) {
+  top: @top;
+  transform: @translateY;
+}
+
+
+
+.icons(@pos) {
+  background-image: url("../img/sprite.png");
+  background-position: @pos;
+}

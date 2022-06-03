@@ -1,0 +1,49 @@
+{
+  "name": "wp-default",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp default",
+    "build": "gulp build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.4",
+    "browser-sync": "^2.27.4",
+    "css-mqpacker": "^7.0.0",
+    "del": "^5.1.0",
+    "gh-pages": "^2.2.0",
+    "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-less": "^4.0.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgmin": "^2.2.0",
+    "gulp-svgstore": "^8.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp.spritesmith": "^6.12.1",
+    "uglify-es": "^3.3.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Konnichiwaeien/wp-default.git"
+  },
+  "author": "Konnichiwaeien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Konnichiwaeien/wp-default/issues"
+  },
+  "homepage": "https://github.com/Konnichiwaeien/wp-default#readme",
+  "dependencies": {
+    "imask": "^6.4.2",
+    "lightgallery": "^2.4.0"
+  }
+}
